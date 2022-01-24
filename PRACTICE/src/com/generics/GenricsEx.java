@@ -6,7 +6,7 @@ public class GenricsEx {
 	
 	public static void main(String[] args) {
 		
-		PrinterEx testx=new PrinterEx(78.0);
+		Printer testx=new Printer(78.0);
 		testx.print();
 //		Printer<Integer> testy=new Printer(23);
 //		testy.print();
@@ -17,21 +17,6 @@ public class GenricsEx {
 		
 		
 		
-	}
-
-}
-class PrinterEx<T> {
-	
-	T count;
-	
-	public PrinterEx(T count)
-	{
-		this.count=count;
-	}
-	
-	public void print()
-	{
-		System.out.println(count);
 	}
 
 }
