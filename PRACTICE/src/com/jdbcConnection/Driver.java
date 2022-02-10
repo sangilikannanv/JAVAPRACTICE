@@ -23,7 +23,7 @@ public class Driver {
 		String uname="root";
 		String pass="";
 
-		String query ="select username from student where userid=3";
+		String query ="select ? from student where userid=?";
 		
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con= DriverManager.getConnection(url,uname,pass);

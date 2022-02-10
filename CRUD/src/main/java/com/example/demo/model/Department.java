@@ -3,7 +3,7 @@ package com.example.demo.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity(name = "DEPARTMENT_INFO")
+@Entity(name = "DEPARTMENT_INFO_ECE")
 public class Department {
 
 	@Id

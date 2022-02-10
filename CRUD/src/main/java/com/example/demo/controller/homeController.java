@@ -58,7 +58,17 @@ public class homeController {
 
 	@PostMapping(path = "/addStudent")
 	public StudentResponse addStudent(@RequestBody StudentRequest request) {
-		return service.addStudent(request);
+		StudentResponse studentResponse = null;
+		try {
+			studentResponse= service.addStudent(request);
+		}catch(Exception e) {
+			System.out.print("No Certificate "+e);
+			studentResponse = new StudentResponse();
+			studentResponse.setStudent(request.getStudent());
+			studentResponse.setDept(request.getDept());
+			studentResponse.setStatus("Failed to register");
+		}
+		return studentResponse;
 	}
 
 }

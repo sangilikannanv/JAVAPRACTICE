@@ -15,6 +15,8 @@ public class GenricsEx {
 		
 		ArrayList<Cat> catList=new ArrayList<>();
 		
+	
+		
 		
 		
 	}
