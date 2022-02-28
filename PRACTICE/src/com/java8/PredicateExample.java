@@ -7,7 +7,7 @@ public class PredicateExample {
 
 	public static void main(String[] args) {
 		
-		Integer v[]= {5,3,4};
+		Integer v[]= {5,3,4,10,15};
 		List<Integer> values=Arrays.asList(v);
 		
 //		Predicate<Integer> pre=new Predicate<Integer>()

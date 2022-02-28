@@ -52,33 +52,33 @@ public class StreamAPI {
 
 		// 8.Stream rows from text file, sort, filter and print
 		System.out.println("------------8------------");
-		Stream<String> bands = Files.lines(Paths.get("D:\\Read.txt"));
+		Stream<String> bands = Files.lines(Paths.get("D:\\Notes\\Read.txt"));
 		bands.sorted().filter(x -> x.startsWith("s")).forEach(System.out::println);
 		bands.close();
 
 		// 9.Stream rows from text file and save to List
 		System.out.println("------------9------------");
-		List<String> bands2 = Files.lines(Paths.get("D:\\Read.txt")).filter(x -> x.contains("ili"))
+		List<String> bands2 = Files.lines(Paths.get("D:\\Notes\\Read.txt")).filter(x -> x.contains("ili"))
 				.collect(Collectors.toList());
 		bands2.forEach(x -> System.out.println(x));
 
 		// 10.Stream rows from csv file and count
 		System.out.println("------------10------------");
-		Stream<String> rows = Files.lines(Paths.get("D:\\Data.txt"));
+		Stream<String> rows = Files.lines(Paths.get("D:\\Notes\\Data.txt"));
 		int rowCount = (int) rows.map(x -> x.split(",")).filter(x -> x.length == 3).count();
 		System.out.println(rowCount + "rows.");
 		rows.close();
 
 		// 11.Stream rows from csv file, parse data from rows
 		System.out.println("------------11------------");
-		Stream<String> rows1 = Files.lines(Paths.get("D:\\Data.txt"));
+		Stream<String> rows1 = Files.lines(Paths.get("D:\\Notes\\Data.txt"));
 		rows1.map(x -> x.split(",")).filter(x -> x.length == 3).filter(x -> Integer.parseInt(x[1]) > 15)
 				.forEach(x -> System.out.println(x[0] + " " + x[1] + " " + x[2]));
 		rows1.close();
 
 		// 12.Stream rows from csv file, parse data from rows
 		System.out.println("------------12------------");
-		Stream<String> rows2 = Files.lines(Paths.get("D:\\Data.txt"));
+		Stream<String> rows2 = Files.lines(Paths.get("D:\\Notes\\Data.txt"));
 		Map<String, Integer> mapOne = new HashMap<>();
 		mapOne = rows2.map(x -> x.split(",")).filter(x -> x.length == 3).filter(x -> Integer.parseInt(x[1]) > 15)
 				.collect(Collectors.toMap(x -> x[0], x -> Integer.parseInt(x[1])));

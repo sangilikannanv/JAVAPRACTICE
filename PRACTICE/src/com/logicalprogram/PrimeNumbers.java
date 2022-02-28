@@ -28,12 +28,12 @@ public class PrimeNumbers {
 		System.out.println(isPrimeNumber(5));
 		
 		Stream.iterate(BigInteger.valueOf(2), BigInteger::nextProbablePrime)
-				.limit(5)
+				.limit(10)
 				.forEach(x -> System.out.format("%s\t", x));
 		
 		System.out.println();
 		System.out.println("Normal Logic");
-		  int n=1;
+		  int n=10;
 	      int status = 1;
 	      int num = 3;
 	      System.out.println("First "+n+" prime numbers are:");   

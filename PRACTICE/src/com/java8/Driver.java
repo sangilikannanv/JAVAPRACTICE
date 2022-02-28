@@ -14,7 +14,7 @@ public class Driver {
 		al.stream().forEach(list->System.out.println(list));
 		System.out.println("---------------------------------------------");
 		al.stream().filter(item -> item.getAge()>=22).forEach(System.out::println);
-		System.out.println("---------------------------------------------");
+		System.out.println("----------------------------------------------");
 		al.stream().filter(item -> item.getAge()>=22).forEach(employee ->{
 			
 			if(employee.getExperiance()>=2)

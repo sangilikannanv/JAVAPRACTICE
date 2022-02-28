@@ -17,21 +17,24 @@ class MethodOverloading
  {
 	    void print()
 		{
-			System.out.println("AAA");
+			System.out.println("from MethodOverriding print");
 		}
+	    
+	   
  }
  class subOne extends MethodOverriding
  {
 	   void print()
 		{
-			System.out.println("AAA");
+			System.out.println("subOne");
 		}
  }
  class subTwo extends MethodOverriding
  {
 	    void print()
 		{
-			System.out.println("BBB");
+	    	super.print();
+			System.out.println("subTwo");
 		}
  }
 
@@ -40,11 +43,14 @@ public class Polymorphism {
 		System.out.println(MethodOverloading.add(2, 3));
 		System.out.println(MethodOverloading.add(2, 3, 4));
 		
-		MethodOverriding mor;
-		mor=new subOne();
-		mor.print();
-		mor=new subTwo();
-		mor.print();
+		MethodOverriding mor=new MethodOverriding();
+		subTwo subobj=new subTwo();
+		subobj.print();
+//		mor.print();
+//		mor=new subOne();
+//		mor.print();
+//		mor=new subTwo();
+//		mor.print();
 	}
 
 }
