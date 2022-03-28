@@ -4,11 +4,18 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "EMPLOYEE_INFO")
-public class Employee {
+import org.springframework.beans.factory.annotation.Value;
+
+public class Employee implements Animal {
 	
-	@Id
-	private int id;
+	
+
+	@Override
+	public void colour() {
+		// TODO Auto-generated method stub
+
+	}
 
 }
+
+

@@ -13,6 +13,8 @@ public class LinkedHashMapExample {
 		trMap.put("annan", 20);
 		trMap.put("sannan", 20);
 		trMap.put("zannan", 20);
+		trMap.put(null, 245);
+		trMap.put(null, 567);
 		
 		trMap.entrySet().forEach(x->System.out.println(x));
 	}

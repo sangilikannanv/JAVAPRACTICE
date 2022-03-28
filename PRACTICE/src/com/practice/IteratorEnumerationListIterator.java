@@ -3,7 +3,9 @@ package com.practice;
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.ListIterator;
+import java.util.Spliterator;
 import java.util.Vector;
+import java.util.stream.Stream;
 
 public class IteratorEnumerationListIterator {
 	
@@ -14,6 +16,18 @@ public class IteratorEnumerationListIterator {
 		list.add(20);
 		list.add(30);
 		list.add(40);
+		
+		
+		System.out.println("Splitrator");   //except Map we can iterate all collection api and Stream
+		
+		Stream<Integer> abc=list.stream();
+		
+		Spliterator<Integer> sptr=abc.spliterator();
+		System.out.println("From Spliteratior");
+		sptr.forEachRemaining(n->System.out.println(n));
+		
+		
+		
 		System.out.println("Iterator");
 		Iterator<Integer> c=list.iterator();
 		while(c.hasNext())

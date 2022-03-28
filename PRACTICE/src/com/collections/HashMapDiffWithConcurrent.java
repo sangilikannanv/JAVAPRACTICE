@@ -29,8 +29,8 @@ public class HashMapDiffWithConcurrent extends Thread{
         tsdsd.start();   
         for (Object o : h.entrySet())   
         {   
-            Object s=o;   
-            System.out.println(s);   
+            //Object s=o;   
+            System.out.println(o);   
             Thread.sleep(1000);   
         }   
         System.out.println(h);   

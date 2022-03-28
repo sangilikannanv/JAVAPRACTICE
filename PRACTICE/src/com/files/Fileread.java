@@ -12,7 +12,7 @@ public class Fileread {
         FileReader fr=null;
         try
         {
-            fr = new FileReader("D:\\Read.txt");
+            fr = new FileReader("D:\\Notes\\Read.txt");
             while ((ch=fr.read())!=-1)
             {
             	value+=String.valueOf((char)ch);

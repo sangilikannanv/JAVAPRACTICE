@@ -15,6 +15,9 @@ public class HashMapExample {
 		hashMap.put(null, "sangili");
 		hashMap.put(null, null);
 		hashMap.put(null, null);
+		hashMap.put("Zaaas", "aaaa");
+		hashMap.put("Kannan", "aaaa");
+		hashMap.put("Abcv", "aaaa");
 		
 		System.out.println(hashMap);
 		

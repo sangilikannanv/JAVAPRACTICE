@@ -25,7 +25,7 @@ public class PrimeNumbers {
 		
 		System.out.println(isPrime(5));
 		
-		System.out.println(isPrimeNumber(5));
+		System.out.println("&&& "+isPrimeNumber(18));
 		
 		Stream.iterate(BigInteger.valueOf(2), BigInteger::nextProbablePrime)
 				.limit(10)

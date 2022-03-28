@@ -1,6 +1,6 @@
 package com.practice;
 
-public class GarbageCollection {
+public class GarbageCollection {   //To clear the unused memory
 	public void finalize() {
 		System.out.println("Garbage Collected");
 		

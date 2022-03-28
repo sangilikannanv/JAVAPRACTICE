@@ -7,7 +7,7 @@ public class GenricsEx {
 	public static void main(String[] args) {
 		
 		//Printer testx=new Printer(78.0);
-		Printer testx=new Printer("This is Genrics");
+		Printer testx=new Printer("sdsdsdj");
 		testx.print();
 //		Printer<Integer> testy=new Printer(23);
 //		testy.print();

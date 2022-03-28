@@ -3,7 +3,7 @@ package com.oops;
 interface Shape
 {
 	int a=10;
-	void circle();
+	abstract void  circle();
 	void rectangle();
 	
 }
@@ -21,6 +21,7 @@ abstract class Circle implements Shape
 }
 class Rectangle extends Circle
 {
+	
 	public void rectangle() {
 		System.out.println("Rectangle");
 	}

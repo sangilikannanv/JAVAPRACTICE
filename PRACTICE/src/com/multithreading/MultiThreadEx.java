@@ -1,6 +1,6 @@
 package com.multithreading;
 
-public class MultiThreadEx extends ThreadRef {
+public class MultiThreadEx extends Thread {
 	
 	
 	public static void main(String[] args) {
@@ -9,7 +9,9 @@ public class MultiThreadEx extends ThreadRef {
 		//MultiThreadEx nbv1=new MultiThreadEx();
 		//Thread asd=new Thread(nbv);
 		//nbv.run();
+		//nbv.run();
 		nbv.run();
+		//nbv.start();
 		
 	}
 }

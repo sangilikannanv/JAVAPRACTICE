@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class FIlewrite {
 	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException  {
 		String str = 
 	"1. Ann finishes her work and calls her friends. Then she heads to the supermarket to buy food, waits in line to pay, and goes home. Once at home, she starts cooking. When dinner is ready, she cleans the apartment, gusts arrive, and most likely wait till Ann finishes all the work. The party starts later.\r\n"
 	+ "\r\n"
