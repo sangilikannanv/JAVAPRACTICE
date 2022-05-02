@@ -2,7 +2,6 @@ package com.oops;
 
 interface Shape
 {
-	int a=10;
 	abstract void  circle();
 	void rectangle();
 	
@@ -10,13 +9,9 @@ interface Shape
 abstract class Circle implements Shape
 {
 	
-	int b;
 	public void circle()
 	{
 		System.out.println("Circle");
-	}
-	public void setB(int b) {
-		this.b=b+a;
 	}
 }
 class Rectangle extends Circle
@@ -31,8 +26,6 @@ public class AbstractionanotherExample {
 		
 	Rectangle obj=new Rectangle();
 	obj.circle();
-	obj.setB(10);;
-	obj.b=10;
 	obj.rectangle();
 }
 

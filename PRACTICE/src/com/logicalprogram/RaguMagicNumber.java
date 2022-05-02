@@ -3,7 +3,7 @@ package com.logicalprogram;
 public class RaguMagicNumber {
 
 	public static void main(String[] args) {
-		int a=119;
+		int a=18;
 		
 		int result = getMagic(a);
 		if(result>1) {

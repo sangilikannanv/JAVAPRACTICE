@@ -105,8 +105,7 @@ public class StreamAPI {
 		System.out.println("------------14------------");
 		
 		int a[]= {1,2,3,4,5,6,7,8,9};
-		IntSummaryStatistics summary=IntStream.of(a)
-				.summaryStatistics();
+		IntSummaryStatistics summary=IntStream.of(a).summaryStatistics();
 		System.out.println(summary.getAverage());
 
 	}

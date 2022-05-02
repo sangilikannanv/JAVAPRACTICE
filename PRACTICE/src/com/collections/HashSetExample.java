@@ -8,7 +8,9 @@ public class HashSetExample {
 	public static void main(String[] args) {
 		
 		ArrayList<Integer> al=new ArrayList<>();
-		int a[]={1,2,7,4,5,6,5,4,3,2,1,3};
+		int a[]={1,2,7,4,5,6,5,4,3,2,2,1,3};
+		int max=0;
+		int temp=0;
 		for(int i=0;i<a.length;i++)
 		{
 			al.add(a[i]);
@@ -23,8 +25,14 @@ public class HashSetExample {
 	    for(Integer ass : hs)
 	    {
 	    	count=Collections.frequency(al, ass);
+	    	if(max<count)
+	    	{
+	    		temp=ass;
+	    		max=count;
+	    	}
 	    	System.out.println(ass+" Occures "+count+" times");
 	    }
+	    System.out.println("Max Character :"+temp+" Occures "+max+" times");
 	}
 
 }
