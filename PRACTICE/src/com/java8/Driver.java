@@ -30,9 +30,9 @@ public class Driver {
 			System.out.println(employee);
 				});
 		System.out.println("---------------------------------------------");
-		Map<Object, Long> nameCount = al.stream().collect(Collectors.groupingBy(string -> string.getAge(), Collectors.counting()));
-        nameCount.forEach((name, count) -> {
-            System.out.println(name + ":" + count);
+		Map<Object, Long> ageCount = al.stream().collect(Collectors.groupingBy(emp -> emp.getAge(), Collectors.counting()));
+		ageCount.forEach((age, count) -> {
+            System.out.println(age + ":" + count);
         });
         
 		al.stream().filter(item -> item.getAge() >= 22).sorted(Comparator.comparing(emp -> emp.getExperiance())).forEach(System.out::println);

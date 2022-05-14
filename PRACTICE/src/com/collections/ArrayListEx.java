@@ -7,7 +7,7 @@ public class ArrayListEx {
 	public static void main(String[] args) {
 		
 		
-		ArrayList<String> arrList=new ArrayList<>();
+		ArrayList<String> arrList=new ArrayList<>(2);
 		arrList.add("One");
 		arrList.add("Two");
 		arrList.add("Three");
