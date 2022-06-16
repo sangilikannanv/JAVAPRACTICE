@@ -23,6 +23,7 @@ public class PrimeNumbers {
 	
 	public static void main(String[] args) {
 		
+		
 		System.out.println(isPrime(5));
 		
 		System.out.println("&&& "+isPrimeNumber(18));

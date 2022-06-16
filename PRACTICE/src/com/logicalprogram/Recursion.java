@@ -4,11 +4,10 @@ public class Recursion {
 
 	public static void main(String[] args) {
 
-		System.out.println("Answer : " + recurse(0));
+		System.out.println("Answer : " + recurse(5));
 	}
 
 	public static int recurse(int n) {
-		System.out.println(n + " " + n);
 
 		if (n <= 1) {
 			return 1;

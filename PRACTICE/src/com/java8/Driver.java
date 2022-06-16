@@ -1,6 +1,7 @@
 package com.java8;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -34,12 +35,36 @@ public class Driver {
 		ageCount.forEach((age, count) -> {
             System.out.println(age + ":" + count);
         });
+		
+		Map<Object, Integer> sum = al.stream().filter(emp -> emp.getAge()>22).collect(
+                Collectors.groupingBy(emp -> emp.getName(), Collectors.summingInt(emp -> emp.getAge())));
+		
+		sum.forEach((age, count) -> {
+            System.out.println(age + ":" + count);
+        });
         
+		
+		
 		al.stream().filter(item -> item.getAge() >= 22).sorted(Comparator.comparing(emp -> emp.getExperiance())).forEach(System.out::println);
 		List<Employee> result =al.stream().filter(item -> item.getAge() >= 22).sorted(Comparator.comparing(emp -> emp.getExperiance())).collect(Collectors.toList());
 		Set<Employee> result1 =al.stream().filter(item -> item.getAge() >= 22).sorted(Comparator.comparing(emp -> emp.getExperiance())).collect(Collectors.toSet());
 	    System.out.println(result1);
 		//Map<Integer, String> result2 =al.stream().filter(item -> item.getAge() >= 22).sorted(Comparator.comparing(emp -> emp.getExperiance())).collect(Collectors.toMap(Employee::getAge, Employee ::getName));
+	
+
+	    
+	    System.out.println("************************");
+		al.stream().filter(item -> item.getAge() >= 22).sorted(Comparator.comparing(Employee::getExperiance).thenComparing(Employee::getAge).thenComparing(Employee::getName).reversed()).forEach(System.out::println);
+	
+		al.sort((o1,o2) -> o1.getAge()-o2.getAge());
+		System.out.println("**********************");
+		System.out.println(al);
+		
+		Collections.sort(al,(o1,o2)->o2.getSalary()-o1.getSalary());
+		System.out.println("**********************");
+		System.out.println(al);
+		
+		
 	}
 
 }

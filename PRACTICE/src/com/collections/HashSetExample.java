@@ -3,6 +3,7 @@ package com.collections;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.LinkedList;
 
 public class HashSetExample {
 	public static void main(String[] args) {
@@ -18,6 +19,7 @@ public class HashSetExample {
 		System.out.println(al);
 		
 	    HashSet<Integer> hs=new HashSet<Integer>(al);
+	    LinkedList<String> lhs=new LinkedList<>();
 	    
 	    System.out.println(hs);
 	    

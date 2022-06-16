@@ -11,9 +11,13 @@ public class DatabaseService {
 	{
 		ArrayList<Employee> emp=new ArrayList<>();
 		emp.add(new Employee("one", 21, 15000, 2));
-		emp.add(new Employee("two",22, 2000, 2));
+		emp.add(new Employee("four",32, 2000, 2));
 		emp.add(new Employee("three",23 , 3000, 3));
-		emp.add(new Employee("four", 22, 4000, 3));
+		emp.add(new Employee("four", 22, 4000, 12));
+		emp.add(new Employee("abi", 26, 12500, 11));
+		emp.add(new Employee("sai", 28, 13500, 25));
+		emp.add(new Employee("kannan", 28, 14500, 10));
+		emp.add(new Employee("Last",31, 2000, 2));
 		return emp;
 	}
 	public Map<Employee,Integer> getEmployeeMap()
